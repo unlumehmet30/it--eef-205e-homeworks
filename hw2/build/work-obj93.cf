@@ -1,0 +1,19 @@
+v 4
+file "/Users/cd/OneWareStudio/Projects/hw2/" "and2_gate.vhd" "0ced2ff6447e5633f42c5b7513f43b3ac808a70c" "20251114091301.168":
+  entity and2_gate at 1( 0) + 0 on 15;
+  architecture structure of and2_gate at 12( 181) + 0 on 16;
+file "/Users/cd/OneWareStudio/Projects/hw2/" "ChemicalSafety_Dataflow.vhd" "8973e7b5ed3fd19cd9dce6b47464b2b362df1ac5" "20251114091301.067":
+  entity chemicalsafety_dataflow at 1( 0) + 0 on 4;
+  architecture dataflow_logic of chemicalsafety_dataflow at 17( 539) + 0 on 4;
+file "/Users/cd/OneWareStudio/Projects/hw2/" "or2_gate.vhd" "06cbc4e0f5b518704b878903bd5d3e6fe2aecb5a" "20251114091301.168":
+  entity or2_gate at 1( 0) + 0 on 17;
+  architecture structure of or2_gate at 12( 179) + 0 on 18;
+file "/Users/cd/OneWareStudio/Projects/hw2/" "ChemicalSafety_Dataflow_tb.vhd" "cae7f69c78191e21c57b3d65fa6b077110b319cf" "20251114091301.068":
+  entity chemicalsafety_dataflow_tb at 1( 0) + 0 on 4;
+  architecture behavioral of chemicalsafety_dataflow_tb at 8( 155) + 0 on 4;
+file "/Users/cd/OneWareStudio/Projects/hw2/" "ChemicalSafety_Structural.vhd" "e81a5303afbdb6778f345bf7e0858cb093a7c849" "20251114091301.168":
+  entity chemicalsafety_structural at 1( 0) + 0 on 11;
+  architecture structural_logic of chemicalsafety_structural at 17( 487) + 0 on 12;
+file "/Users/cd/OneWareStudio/Projects/hw2/" "inv_gate.vhd" "806b249b3a33759ee51daf2b499b03dfe0503e00" "20251114091301.168":
+  entity inv_gate at 1( 0) + 0 on 13;
+  architecture structure of inv_gate at 11( 149) + 0 on 14;

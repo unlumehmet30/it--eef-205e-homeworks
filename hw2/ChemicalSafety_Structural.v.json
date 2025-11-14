@@ -1,0 +1,568 @@
+{
+  "creator": "Yosys 0.56+186 (git sha1 51eaaffe0, aarch64-apple-darwin23.5-clang++ 18.1.8 -fPIC -O3)",
+  "modules": {
+    "ChemicalSafety_Structural": {
+      "attributes": {
+        "hdlname": "ChemicalSafety_Structural",
+        "top": "00000000000000000000000000000001",
+        "src": "ChemicalSafety_Structural.v:30.1-116.10"
+      },
+      "ports": {
+        "L": {
+          "direction": "input",
+          "bits": [ 2 ]
+        },
+        "T": {
+          "direction": "input",
+          "bits": [ 3 ]
+        },
+        "P": {
+          "direction": "input",
+          "bits": [ 4 ]
+        },
+        "M": {
+          "direction": "input",
+          "bits": [ 5 ]
+        },
+        "A": {
+          "direction": "output",
+          "bits": [ 6 ]
+        },
+        "V": {
+          "direction": "output",
+          "bits": [ 7 ]
+        }
+      },
+      "cells": {
+        "u1_not_m": {
+          "hide_name": 0,
+          "type": "inv_gate",
+          "parameters": {
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "ChemicalSafety_Structural.v:71.12-73.20"
+          },
+          "port_directions": {
+            "i": "input",
+            "o": "output"
+          },
+          "connections": {
+            "i": [ 5 ],
+            "o": [ 8 ]
+          }
+        },
+        "u2_and_tp": {
+          "hide_name": 0,
+          "type": "and2_gate",
+          "parameters": {
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "ChemicalSafety_Structural.v:77.13-80.21"
+          },
+          "port_directions": {
+            "i1": "input",
+            "i2": "input",
+            "o": "output"
+          },
+          "connections": {
+            "i1": [ 3 ],
+            "i2": [ 4 ],
+            "o": [ 9 ]
+          }
+        },
+        "u3_or_l_tp": {
+          "hide_name": 0,
+          "type": "or2_gate",
+          "parameters": {
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "ChemicalSafety_Structural.v:84.12-87.22"
+          },
+          "port_directions": {
+            "i1": "input",
+            "i2": "input",
+            "o": "output"
+          },
+          "connections": {
+            "i1": [ 2 ],
+            "i2": [ 9 ],
+            "o": [ 10 ]
+          }
+        },
+        "u4_and_a": {
+          "hide_name": 0,
+          "type": "and2_gate",
+          "parameters": {
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "ChemicalSafety_Structural.v:91.13-94.20"
+          },
+          "port_directions": {
+            "i1": "input",
+            "i2": "input",
+            "o": "output"
+          },
+          "connections": {
+            "i1": [ 8 ],
+            "i2": [ 10 ],
+            "o": [ 6 ]
+          }
+        },
+        "u5_and_tl": {
+          "hide_name": 0,
+          "type": "and2_gate",
+          "parameters": {
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "ChemicalSafety_Structural.v:98.13-101.21"
+          },
+          "port_directions": {
+            "i1": "input",
+            "i2": "input",
+            "o": "output"
+          },
+          "connections": {
+            "i1": [ 3 ],
+            "i2": [ 2 ],
+            "o": [ 11 ]
+          }
+        },
+        "u6_or_mp": {
+          "hide_name": 0,
+          "type": "or2_gate",
+          "parameters": {
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "ChemicalSafety_Structural.v:105.12-108.20"
+          },
+          "port_directions": {
+            "i1": "input",
+            "i2": "input",
+            "o": "output"
+          },
+          "connections": {
+            "i1": [ 5 ],
+            "i2": [ 4 ],
+            "o": [ 12 ]
+          }
+        },
+        "u7_or_v": {
+          "hide_name": 0,
+          "type": "or2_gate",
+          "parameters": {
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "ChemicalSafety_Structural.v:112.12-115.19"
+          },
+          "port_directions": {
+            "i1": "input",
+            "i2": "input",
+            "o": "output"
+          },
+          "connections": {
+            "i1": [ 12 ],
+            "i2": [ 11 ],
+            "o": [ 7 ]
+          }
+        }
+      },
+      "netnames": {
+        "A": {
+          "hide_name": 0,
+          "bits": [ 6 ],
+          "attributes": {
+            "src": "ChemicalSafety_Structural.v:35.11-35.12"
+          }
+        },
+        "L": {
+          "hide_name": 0,
+          "bits": [ 2 ],
+          "attributes": {
+            "src": "ChemicalSafety_Structural.v:31.11-31.12"
+          }
+        },
+        "M": {
+          "hide_name": 0,
+          "bits": [ 5 ],
+          "attributes": {
+            "src": "ChemicalSafety_Structural.v:34.11-34.12"
+          }
+        },
+        "P": {
+          "hide_name": 0,
+          "bits": [ 4 ],
+          "attributes": {
+            "src": "ChemicalSafety_Structural.v:33.11-33.12"
+          }
+        },
+        "T": {
+          "hide_name": 0,
+          "bits": [ 3 ],
+          "attributes": {
+            "src": "ChemicalSafety_Structural.v:32.11-32.12"
+          }
+        },
+        "V": {
+          "hide_name": 0,
+          "bits": [ 7 ],
+          "attributes": {
+            "src": "ChemicalSafety_Structural.v:36.11-36.12"
+          }
+        },
+        "s_l_or_tp": {
+          "hide_name": 0,
+          "bits": [ 10 ],
+          "attributes": {
+            "src": "ChemicalSafety_Structural.v:39.8-39.17"
+          }
+        },
+        "s_m_or_p": {
+          "hide_name": 0,
+          "bits": [ 12 ],
+          "attributes": {
+            "src": "ChemicalSafety_Structural.v:41.8-41.16"
+          }
+        },
+        "s_not_m": {
+          "hide_name": 0,
+          "bits": [ 8 ],
+          "attributes": {
+            "src": "ChemicalSafety_Structural.v:37.8-37.15"
+          }
+        },
+        "s_tl": {
+          "hide_name": 0,
+          "bits": [ 11 ],
+          "attributes": {
+            "src": "ChemicalSafety_Structural.v:40.8-40.12"
+          }
+        },
+        "s_tp": {
+          "hide_name": 0,
+          "bits": [ 9 ],
+          "attributes": {
+            "src": "ChemicalSafety_Structural.v:38.8-38.12"
+          }
+        },
+        "u1_not_m_n2": {
+          "hide_name": 0,
+          "bits": [ 8 ],
+          "attributes": {
+            "src": "ChemicalSafety_Structural.v:42.8-42.19"
+          }
+        },
+        "u1_not_m_o": {
+          "hide_name": 0,
+          "bits": [ 8 ],
+          "attributes": {
+            "src": "ChemicalSafety_Structural.v:43.8-43.18"
+          }
+        },
+        "u2_and_tp_n5": {
+          "hide_name": 0,
+          "bits": [ 9 ],
+          "attributes": {
+            "src": "ChemicalSafety_Structural.v:44.8-44.20"
+          }
+        },
+        "u2_and_tp_o": {
+          "hide_name": 0,
+          "bits": [ 9 ],
+          "attributes": {
+            "src": "ChemicalSafety_Structural.v:45.8-45.19"
+          }
+        },
+        "u3_or_l_tp_n8": {
+          "hide_name": 0,
+          "bits": [ 10 ],
+          "attributes": {
+            "src": "ChemicalSafety_Structural.v:46.8-46.21"
+          }
+        },
+        "u3_or_l_tp_o": {
+          "hide_name": 0,
+          "bits": [ 10 ],
+          "attributes": {
+            "src": "ChemicalSafety_Structural.v:47.8-47.20"
+          }
+        },
+        "u4_and_a_n11": {
+          "hide_name": 0,
+          "bits": [ 6 ],
+          "attributes": {
+            "src": "ChemicalSafety_Structural.v:48.8-48.20"
+          }
+        },
+        "u4_and_a_o": {
+          "hide_name": 0,
+          "bits": [ 6 ],
+          "attributes": {
+            "src": "ChemicalSafety_Structural.v:49.8-49.18"
+          }
+        },
+        "u5_and_tl_n14": {
+          "hide_name": 0,
+          "bits": [ 11 ],
+          "attributes": {
+            "src": "ChemicalSafety_Structural.v:50.8-50.21"
+          }
+        },
+        "u5_and_tl_o": {
+          "hide_name": 0,
+          "bits": [ 11 ],
+          "attributes": {
+            "src": "ChemicalSafety_Structural.v:51.8-51.19"
+          }
+        },
+        "u6_or_mp_n17": {
+          "hide_name": 0,
+          "bits": [ 12 ],
+          "attributes": {
+            "src": "ChemicalSafety_Structural.v:52.8-52.20"
+          }
+        },
+        "u6_or_mp_o": {
+          "hide_name": 0,
+          "bits": [ 12 ],
+          "attributes": {
+            "src": "ChemicalSafety_Structural.v:53.8-53.18"
+          }
+        },
+        "u7_or_v_n20": {
+          "hide_name": 0,
+          "bits": [ 7 ],
+          "attributes": {
+            "src": "ChemicalSafety_Structural.v:54.8-54.19"
+          }
+        },
+        "u7_or_v_o": {
+          "hide_name": 0,
+          "bits": [ 7 ],
+          "attributes": {
+            "src": "ChemicalSafety_Structural.v:55.8-55.17"
+          }
+        }
+      }
+    },
+    "and2_gate": {
+      "attributes": {
+        "hdlname": "and2_gate",
+        "src": "ChemicalSafety_Structural.v:11.1-19.10"
+      },
+      "ports": {
+        "i1": {
+          "direction": "input",
+          "bits": [ 2 ]
+        },
+        "i2": {
+          "direction": "input",
+          "bits": [ 3 ]
+        },
+        "o": {
+          "direction": "output",
+          "bits": [ 4 ]
+        }
+      },
+      "cells": {
+        "$and$ChemicalSafety_Structural.v:18$2": {
+          "hide_name": 1,
+          "type": "$and",
+          "parameters": {
+            "A_SIGNED": "00000000000000000000000000000000",
+            "A_WIDTH": "00000000000000000000000000000001",
+            "B_SIGNED": "00000000000000000000000000000000",
+            "B_WIDTH": "00000000000000000000000000000001",
+            "Y_WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "src": "ChemicalSafety_Structural.v:18.18-18.25"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 2 ],
+            "B": [ 3 ],
+            "Y": [ 4 ]
+          }
+        }
+      },
+      "netnames": {
+        "i1": {
+          "hide_name": 0,
+          "bits": [ 2 ],
+          "attributes": {
+            "src": "ChemicalSafety_Structural.v:12.11-12.13"
+          }
+        },
+        "i2": {
+          "hide_name": 0,
+          "bits": [ 3 ],
+          "attributes": {
+            "src": "ChemicalSafety_Structural.v:13.11-13.13"
+          }
+        },
+        "n26_o": {
+          "hide_name": 0,
+          "bits": [ 4 ],
+          "attributes": {
+            "src": "ChemicalSafety_Structural.v:15.8-15.13"
+          }
+        },
+        "o": {
+          "hide_name": 0,
+          "bits": [ 4 ],
+          "attributes": {
+            "src": "ChemicalSafety_Structural.v:14.11-14.12"
+          }
+        }
+      }
+    },
+    "inv_gate": {
+      "attributes": {
+        "hdlname": "inv_gate",
+        "src": "ChemicalSafety_Structural.v:21.1-28.10"
+      },
+      "ports": {
+        "i": {
+          "direction": "input",
+          "bits": [ 2 ]
+        },
+        "o": {
+          "direction": "output",
+          "bits": [ 3 ]
+        }
+      },
+      "cells": {
+        "$not$ChemicalSafety_Structural.v:27$1": {
+          "hide_name": 1,
+          "type": "$not",
+          "parameters": {
+            "A_SIGNED": "00000000000000000000000000000000",
+            "A_WIDTH": "00000000000000000000000000000001",
+            "Y_WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "src": "ChemicalSafety_Structural.v:27.18-27.20"
+          },
+          "port_directions": {
+            "A": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 2 ],
+            "Y": [ 3 ]
+          }
+        }
+      },
+      "netnames": {
+        "i": {
+          "hide_name": 0,
+          "bits": [ 2 ],
+          "attributes": {
+            "src": "ChemicalSafety_Structural.v:22.11-22.12"
+          }
+        },
+        "n24_o": {
+          "hide_name": 0,
+          "bits": [ 3 ],
+          "attributes": {
+            "src": "ChemicalSafety_Structural.v:24.8-24.13"
+          }
+        },
+        "o": {
+          "hide_name": 0,
+          "bits": [ 3 ],
+          "attributes": {
+            "src": "ChemicalSafety_Structural.v:23.11-23.12"
+          }
+        }
+      }
+    },
+    "or2_gate": {
+      "attributes": {
+        "hdlname": "or2_gate",
+        "src": "ChemicalSafety_Structural.v:1.1-9.10"
+      },
+      "ports": {
+        "i1": {
+          "direction": "input",
+          "bits": [ 2 ]
+        },
+        "i2": {
+          "direction": "input",
+          "bits": [ 3 ]
+        },
+        "o": {
+          "direction": "output",
+          "bits": [ 4 ]
+        }
+      },
+      "cells": {
+        "$or$ChemicalSafety_Structural.v:8$3": {
+          "hide_name": 1,
+          "type": "$or",
+          "parameters": {
+            "A_SIGNED": "00000000000000000000000000000000",
+            "A_WIDTH": "00000000000000000000000000000001",
+            "B_SIGNED": "00000000000000000000000000000000",
+            "B_WIDTH": "00000000000000000000000000000001",
+            "Y_WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "src": "ChemicalSafety_Structural.v:8.18-8.25"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 2 ],
+            "B": [ 3 ],
+            "Y": [ 4 ]
+          }
+        }
+      },
+      "netnames": {
+        "i1": {
+          "hide_name": 0,
+          "bits": [ 2 ],
+          "attributes": {
+            "src": "ChemicalSafety_Structural.v:2.11-2.13"
+          }
+        },
+        "i2": {
+          "hide_name": 0,
+          "bits": [ 3 ],
+          "attributes": {
+            "src": "ChemicalSafety_Structural.v:3.11-3.13"
+          }
+        },
+        "n28_o": {
+          "hide_name": 0,
+          "bits": [ 4 ],
+          "attributes": {
+            "src": "ChemicalSafety_Structural.v:5.8-5.13"
+          }
+        },
+        "o": {
+          "hide_name": 0,
+          "bits": [ 4 ],
+          "attributes": {
+            "src": "ChemicalSafety_Structural.v:4.11-4.12"
+          }
+        }
+      }
+    }
+  }
+}
