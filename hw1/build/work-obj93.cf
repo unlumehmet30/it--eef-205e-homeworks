@@ -1,0 +1,7 @@
+v 4
+file "/Users/cd/OneWareStudio/Projects/hw1/" "OR_gate.vhd" "3cb494544a839a53844ed26d4544a31f96b787e7" "20251024122626.143":
+  entity or_gate at 1( 0) + 0 on 11;
+  architecture behavioral of or_gate at 10( 185) + 0 on 12;
+file "/Users/cd/OneWareStudio/Projects/hw1/" "OR_gate_tb.vhd" "4dd38d1ea9cc08ffce52b9d709734a7b24f34d71" "20251024122626.054":
+  entity or_gate_tb at 2( 42) + 0 on 4;
+  architecture tb of or_gate_tb at 10( 213) + 0 on 4;

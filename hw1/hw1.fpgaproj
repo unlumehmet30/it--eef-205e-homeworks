@@ -1,0 +1,17 @@
+{
+  "Include": [
+    "*.vhd",
+    "*.vhdl",
+    "*.v",
+    "*.vcd",
+    "vhdl_ls.toml"
+  ],
+  "Exclude": [
+    "build"
+  ],
+  "Loader": "OpenFpgaLoader",
+  "Toolchain": "Yosys",
+  "TestBenches": [
+    "OR_gate_tb.vhd"
+  ]
+}
