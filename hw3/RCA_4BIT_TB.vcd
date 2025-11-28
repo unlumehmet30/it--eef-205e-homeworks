@@ -1,0 +1,35 @@
+$date
+  Mon Nov 24 19:43:22 2025
+$end
+$version
+  GHDL v0
+$end
+$timescale
+  1 fs
+$end
+$scope module standard $end
+$upscope $end
+$scope module std_logic_1164 $end
+$upscope $end
+$scope module rca_4bit_tb $end
+$var reg 4 ! a_tb[3:0] $end
+$var reg 4 " b_tb[3:0] $end
+$var reg 5 # c_out_tb[4:0] $end
+$scope module uut $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+b0000 !
+b0000 "
+bUUUUU #
+#10000000
+b0111 !
+b0011 "
+#30000000
+b1001 !
+b0111 "
+#50000000
+b1111 !
+b1111 "
+#70000000

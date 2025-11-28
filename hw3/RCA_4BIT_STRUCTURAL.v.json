@@ -1,0 +1,757 @@
+{
+  "creator": "Yosys 0.56+186 (git sha1 51eaaffe0, aarch64-apple-darwin23.5-clang++ 18.1.8 -fPIC -O3)",
+  "modules": {
+    "RCA_4BIT_STRUCTURAL": {
+      "attributes": {
+        "hdlname": "RCA_4BIT_STRUCTURAL",
+        "top": "00000000000000000000000000000001",
+        "src": "RCA_4BIT_STRUCTURAL.v:47.1-151.10"
+      },
+      "ports": {
+        "A": {
+          "direction": "input",
+          "bits": [ 2, 3, 4, 5 ]
+        },
+        "B": {
+          "direction": "input",
+          "bits": [ 6, 7, 8, 9 ]
+        },
+        "C_out": {
+          "direction": "output",
+          "bits": [ 10, 11, 12, 13, 14 ]
+        }
+      },
+      "cells": {
+        "fa_1": {
+          "hide_name": 0,
+          "type": "full_adder",
+          "parameters": {
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "RCA_4BIT_STRUCTURAL.v:109.14-114.22"
+          },
+          "port_directions": {
+            "a": "input",
+            "b": "input",
+            "cin": "input",
+            "cout": "output",
+            "s": "output"
+          },
+          "connections": {
+            "a": [ 3 ],
+            "b": [ 7 ],
+            "cin": [ 15 ],
+            "cout": [ 16 ],
+            "s": [ 11 ]
+          }
+        },
+        "fa_2": {
+          "hide_name": 0,
+          "type": "full_adder",
+          "parameters": {
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "RCA_4BIT_STRUCTURAL.v:126.14-131.22"
+          },
+          "port_directions": {
+            "a": "input",
+            "b": "input",
+            "cin": "input",
+            "cout": "output",
+            "s": "output"
+          },
+          "connections": {
+            "a": [ 4 ],
+            "b": [ 8 ],
+            "cin": [ 16 ],
+            "cout": [ 17 ],
+            "s": [ 12 ]
+          }
+        },
+        "fa_3": {
+          "hide_name": 0,
+          "type": "full_adder",
+          "parameters": {
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "RCA_4BIT_STRUCTURAL.v:143.14-148.22"
+          },
+          "port_directions": {
+            "a": "input",
+            "b": "input",
+            "cin": "input",
+            "cout": "output",
+            "s": "output"
+          },
+          "connections": {
+            "a": [ 5 ],
+            "b": [ 9 ],
+            "cin": [ 17 ],
+            "cout": [ 14 ],
+            "s": [ 13 ]
+          }
+        },
+        "ha_0": {
+          "hide_name": 0,
+          "type": "half_adder",
+          "parameters": {
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "RCA_4BIT_STRUCTURAL.v:93.14-97.22"
+          },
+          "port_directions": {
+            "a": "input",
+            "b": "input",
+            "cout": "output",
+            "s": "output"
+          },
+          "connections": {
+            "a": [ 2 ],
+            "b": [ 6 ],
+            "cout": [ 15 ],
+            "s": [ 10 ]
+          }
+        }
+      },
+      "netnames": {
+        "A": {
+          "hide_name": 0,
+          "bits": [ 2, 3, 4, 5 ],
+          "attributes": {
+            "src": "RCA_4BIT_STRUCTURAL.v:48.17-48.18"
+          }
+        },
+        "B": {
+          "hide_name": 0,
+          "bits": [ 6, 7, 8, 9 ],
+          "attributes": {
+            "src": "RCA_4BIT_STRUCTURAL.v:49.17-49.18"
+          }
+        },
+        "C_out": {
+          "hide_name": 0,
+          "bits": [ 10, 11, 12, 13, 14 ],
+          "attributes": {
+            "src": "RCA_4BIT_STRUCTURAL.v:50.17-50.22"
+          }
+        },
+        "c_internal": {
+          "hide_name": 0,
+          "bits": [ 15, 16, 17 ],
+          "attributes": {
+            "src": "RCA_4BIT_STRUCTURAL.v:51.14-51.24"
+          }
+        },
+        "fa_1_cout": {
+          "hide_name": 0,
+          "bits": [ 16 ],
+          "attributes": {
+            "src": "RCA_4BIT_STRUCTURAL.v:64.8-64.17"
+          }
+        },
+        "fa_1_n12": {
+          "hide_name": 0,
+          "bits": [ 11 ],
+          "attributes": {
+            "src": "RCA_4BIT_STRUCTURAL.v:61.8-61.16"
+          }
+        },
+        "fa_1_n13": {
+          "hide_name": 0,
+          "bits": [ 16 ],
+          "attributes": {
+            "src": "RCA_4BIT_STRUCTURAL.v:62.8-62.16"
+          }
+        },
+        "fa_1_s": {
+          "hide_name": 0,
+          "bits": [ 11 ],
+          "attributes": {
+            "src": "RCA_4BIT_STRUCTURAL.v:63.8-63.14"
+          }
+        },
+        "fa_2_cout": {
+          "hide_name": 0,
+          "bits": [ 17 ],
+          "attributes": {
+            "src": "RCA_4BIT_STRUCTURAL.v:71.8-71.17"
+          }
+        },
+        "fa_2_n21": {
+          "hide_name": 0,
+          "bits": [ 12 ],
+          "attributes": {
+            "src": "RCA_4BIT_STRUCTURAL.v:68.8-68.16"
+          }
+        },
+        "fa_2_n22": {
+          "hide_name": 0,
+          "bits": [ 17 ],
+          "attributes": {
+            "src": "RCA_4BIT_STRUCTURAL.v:69.8-69.16"
+          }
+        },
+        "fa_2_s": {
+          "hide_name": 0,
+          "bits": [ 12 ],
+          "attributes": {
+            "src": "RCA_4BIT_STRUCTURAL.v:70.8-70.14"
+          }
+        },
+        "fa_3_cout": {
+          "hide_name": 0,
+          "bits": [ 14 ],
+          "attributes": {
+            "src": "RCA_4BIT_STRUCTURAL.v:78.8-78.17"
+          }
+        },
+        "fa_3_n30": {
+          "hide_name": 0,
+          "bits": [ 13 ],
+          "attributes": {
+            "src": "RCA_4BIT_STRUCTURAL.v:75.8-75.16"
+          }
+        },
+        "fa_3_n31": {
+          "hide_name": 0,
+          "bits": [ 14 ],
+          "attributes": {
+            "src": "RCA_4BIT_STRUCTURAL.v:76.8-76.16"
+          }
+        },
+        "fa_3_s": {
+          "hide_name": 0,
+          "bits": [ 13 ],
+          "attributes": {
+            "src": "RCA_4BIT_STRUCTURAL.v:77.8-77.14"
+          }
+        },
+        "ha_0_cout": {
+          "hide_name": 0,
+          "bits": [ 15 ],
+          "attributes": {
+            "src": "RCA_4BIT_STRUCTURAL.v:57.8-57.17"
+          }
+        },
+        "ha_0_n3": {
+          "hide_name": 0,
+          "bits": [ 10 ],
+          "attributes": {
+            "src": "RCA_4BIT_STRUCTURAL.v:54.8-54.15"
+          }
+        },
+        "ha_0_n4": {
+          "hide_name": 0,
+          "bits": [ 15 ],
+          "attributes": {
+            "src": "RCA_4BIT_STRUCTURAL.v:55.8-55.15"
+          }
+        },
+        "ha_0_s": {
+          "hide_name": 0,
+          "bits": [ 10 ],
+          "attributes": {
+            "src": "RCA_4BIT_STRUCTURAL.v:56.8-56.14"
+          }
+        },
+        "n10_o": {
+          "hide_name": 0,
+          "bits": [ 7 ],
+          "attributes": {
+            "src": "RCA_4BIT_STRUCTURAL.v:59.8-59.13"
+          }
+        },
+        "n11_o": {
+          "hide_name": 0,
+          "bits": [ 15 ],
+          "attributes": {
+            "src": "RCA_4BIT_STRUCTURAL.v:60.8-60.13"
+          }
+        },
+        "n18_o": {
+          "hide_name": 0,
+          "bits": [ 4 ],
+          "attributes": {
+            "src": "RCA_4BIT_STRUCTURAL.v:65.8-65.13"
+          }
+        },
+        "n19_o": {
+          "hide_name": 0,
+          "bits": [ 8 ],
+          "attributes": {
+            "src": "RCA_4BIT_STRUCTURAL.v:66.8-66.13"
+          }
+        },
+        "n1_o": {
+          "hide_name": 0,
+          "bits": [ 2 ],
+          "attributes": {
+            "src": "RCA_4BIT_STRUCTURAL.v:52.8-52.12"
+          }
+        },
+        "n20_o": {
+          "hide_name": 0,
+          "bits": [ 16 ],
+          "attributes": {
+            "src": "RCA_4BIT_STRUCTURAL.v:67.8-67.13"
+          }
+        },
+        "n27_o": {
+          "hide_name": 0,
+          "bits": [ 5 ],
+          "attributes": {
+            "src": "RCA_4BIT_STRUCTURAL.v:72.8-72.13"
+          }
+        },
+        "n28_o": {
+          "hide_name": 0,
+          "bits": [ 9 ],
+          "attributes": {
+            "src": "RCA_4BIT_STRUCTURAL.v:73.8-73.13"
+          }
+        },
+        "n29_o": {
+          "hide_name": 0,
+          "bits": [ 17 ],
+          "attributes": {
+            "src": "RCA_4BIT_STRUCTURAL.v:74.8-74.13"
+          }
+        },
+        "n2_o": {
+          "hide_name": 0,
+          "bits": [ 6 ],
+          "attributes": {
+            "src": "RCA_4BIT_STRUCTURAL.v:53.8-53.12"
+          }
+        },
+        "n36_o": {
+          "hide_name": 0,
+          "bits": [ 15, 16, 17 ],
+          "attributes": {
+            "src": "RCA_4BIT_STRUCTURAL.v:79.14-79.19"
+          }
+        },
+        "n37_o": {
+          "hide_name": 0,
+          "bits": [ 10, 11, 12, 13, 14 ],
+          "attributes": {
+            "src": "RCA_4BIT_STRUCTURAL.v:80.14-80.19"
+          }
+        },
+        "n9_o": {
+          "hide_name": 0,
+          "bits": [ 3 ],
+          "attributes": {
+            "src": "RCA_4BIT_STRUCTURAL.v:58.8-58.12"
+          }
+        }
+      }
+    },
+    "full_adder": {
+      "attributes": {
+        "hdlname": "full_adder",
+        "src": "RCA_4BIT_STRUCTURAL.v:1.1-30.10"
+      },
+      "ports": {
+        "a": {
+          "direction": "input",
+          "bits": [ 2 ]
+        },
+        "b": {
+          "direction": "input",
+          "bits": [ 3 ]
+        },
+        "cin": {
+          "direction": "input",
+          "bits": [ 4 ]
+        },
+        "s": {
+          "direction": "output",
+          "bits": [ 5 ]
+        },
+        "cout": {
+          "direction": "output",
+          "bits": [ 6 ]
+        }
+      },
+      "cells": {
+        "$and$RCA_4BIT_STRUCTURAL.v:21$5": {
+          "hide_name": 1,
+          "type": "$and",
+          "parameters": {
+            "A_SIGNED": "00000000000000000000000000000000",
+            "A_WIDTH": "00000000000000000000000000000001",
+            "B_SIGNED": "00000000000000000000000000000000",
+            "B_WIDTH": "00000000000000000000000000000001",
+            "Y_WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "src": "RCA_4BIT_STRUCTURAL.v:21.18-21.23"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 2 ],
+            "B": [ 3 ],
+            "Y": [ 7 ]
+          }
+        },
+        "$and$RCA_4BIT_STRUCTURAL.v:23$6": {
+          "hide_name": 1,
+          "type": "$and",
+          "parameters": {
+            "A_SIGNED": "00000000000000000000000000000000",
+            "A_WIDTH": "00000000000000000000000000000001",
+            "B_SIGNED": "00000000000000000000000000000000",
+            "B_WIDTH": "00000000000000000000000000000001",
+            "Y_WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "src": "RCA_4BIT_STRUCTURAL.v:23.18-23.25"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 2 ],
+            "B": [ 4 ],
+            "Y": [ 8 ]
+          }
+        },
+        "$and$RCA_4BIT_STRUCTURAL.v:27$8": {
+          "hide_name": 1,
+          "type": "$and",
+          "parameters": {
+            "A_SIGNED": "00000000000000000000000000000000",
+            "A_WIDTH": "00000000000000000000000000000001",
+            "B_SIGNED": "00000000000000000000000000000000",
+            "B_WIDTH": "00000000000000000000000000000001",
+            "Y_WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "src": "RCA_4BIT_STRUCTURAL.v:27.18-27.25"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 3 ],
+            "B": [ 4 ],
+            "Y": [ 9 ]
+          }
+        },
+        "$or$RCA_4BIT_STRUCTURAL.v:25$7": {
+          "hide_name": 1,
+          "type": "$or",
+          "parameters": {
+            "A_SIGNED": "00000000000000000000000000000000",
+            "A_WIDTH": "00000000000000000000000000000001",
+            "B_SIGNED": "00000000000000000000000000000000",
+            "B_WIDTH": "00000000000000000000000000000001",
+            "Y_WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "src": "RCA_4BIT_STRUCTURAL.v:25.18-25.31"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 7 ],
+            "B": [ 8 ],
+            "Y": [ 10 ]
+          }
+        },
+        "$or$RCA_4BIT_STRUCTURAL.v:29$9": {
+          "hide_name": 1,
+          "type": "$or",
+          "parameters": {
+            "A_SIGNED": "00000000000000000000000000000000",
+            "A_WIDTH": "00000000000000000000000000000001",
+            "B_SIGNED": "00000000000000000000000000000000",
+            "B_WIDTH": "00000000000000000000000000000001",
+            "Y_WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "src": "RCA_4BIT_STRUCTURAL.v:29.18-29.31"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 10 ],
+            "B": [ 9 ],
+            "Y": [ 6 ]
+          }
+        },
+        "$xor$RCA_4BIT_STRUCTURAL.v:17$3": {
+          "hide_name": 1,
+          "type": "$xor",
+          "parameters": {
+            "A_SIGNED": "00000000000000000000000000000000",
+            "A_WIDTH": "00000000000000000000000000000001",
+            "B_SIGNED": "00000000000000000000000000000000",
+            "B_WIDTH": "00000000000000000000000000000001",
+            "Y_WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "src": "RCA_4BIT_STRUCTURAL.v:17.18-17.23"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 2 ],
+            "B": [ 3 ],
+            "Y": [ 11 ]
+          }
+        },
+        "$xor$RCA_4BIT_STRUCTURAL.v:19$4": {
+          "hide_name": 1,
+          "type": "$xor",
+          "parameters": {
+            "A_SIGNED": "00000000000000000000000000000000",
+            "A_WIDTH": "00000000000000000000000000000001",
+            "B_SIGNED": "00000000000000000000000000000000",
+            "B_WIDTH": "00000000000000000000000000000001",
+            "Y_WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "src": "RCA_4BIT_STRUCTURAL.v:19.18-19.29"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 11 ],
+            "B": [ 4 ],
+            "Y": [ 5 ]
+          }
+        }
+      },
+      "netnames": {
+        "a": {
+          "hide_name": 0,
+          "bits": [ 2 ],
+          "attributes": {
+            "src": "RCA_4BIT_STRUCTURAL.v:2.11-2.12"
+          }
+        },
+        "b": {
+          "hide_name": 0,
+          "bits": [ 3 ],
+          "attributes": {
+            "src": "RCA_4BIT_STRUCTURAL.v:3.11-3.12"
+          }
+        },
+        "cin": {
+          "hide_name": 0,
+          "bits": [ 4 ],
+          "attributes": {
+            "src": "RCA_4BIT_STRUCTURAL.v:4.11-4.14"
+          }
+        },
+        "cout": {
+          "hide_name": 0,
+          "bits": [ 6 ],
+          "attributes": {
+            "src": "RCA_4BIT_STRUCTURAL.v:6.11-6.15"
+          }
+        },
+        "n44_o": {
+          "hide_name": 0,
+          "bits": [ 11 ],
+          "attributes": {
+            "src": "RCA_4BIT_STRUCTURAL.v:7.8-7.13"
+          }
+        },
+        "n45_o": {
+          "hide_name": 0,
+          "bits": [ 5 ],
+          "attributes": {
+            "src": "RCA_4BIT_STRUCTURAL.v:8.8-8.13"
+          }
+        },
+        "n46_o": {
+          "hide_name": 0,
+          "bits": [ 7 ],
+          "attributes": {
+            "src": "RCA_4BIT_STRUCTURAL.v:9.8-9.13"
+          }
+        },
+        "n47_o": {
+          "hide_name": 0,
+          "bits": [ 8 ],
+          "attributes": {
+            "src": "RCA_4BIT_STRUCTURAL.v:10.8-10.13"
+          }
+        },
+        "n48_o": {
+          "hide_name": 0,
+          "bits": [ 10 ],
+          "attributes": {
+            "src": "RCA_4BIT_STRUCTURAL.v:11.8-11.13"
+          }
+        },
+        "n49_o": {
+          "hide_name": 0,
+          "bits": [ 9 ],
+          "attributes": {
+            "src": "RCA_4BIT_STRUCTURAL.v:12.8-12.13"
+          }
+        },
+        "n50_o": {
+          "hide_name": 0,
+          "bits": [ 6 ],
+          "attributes": {
+            "src": "RCA_4BIT_STRUCTURAL.v:13.8-13.13"
+          }
+        },
+        "s": {
+          "hide_name": 0,
+          "bits": [ 5 ],
+          "attributes": {
+            "src": "RCA_4BIT_STRUCTURAL.v:5.11-5.12"
+          }
+        }
+      }
+    },
+    "half_adder": {
+      "attributes": {
+        "hdlname": "half_adder",
+        "src": "RCA_4BIT_STRUCTURAL.v:32.1-45.10"
+      },
+      "ports": {
+        "a": {
+          "direction": "input",
+          "bits": [ 2 ]
+        },
+        "b": {
+          "direction": "input",
+          "bits": [ 3 ]
+        },
+        "s": {
+          "direction": "output",
+          "bits": [ 4 ]
+        },
+        "cout": {
+          "direction": "output",
+          "bits": [ 5 ]
+        }
+      },
+      "cells": {
+        "$and$RCA_4BIT_STRUCTURAL.v:44$2": {
+          "hide_name": 1,
+          "type": "$and",
+          "parameters": {
+            "A_SIGNED": "00000000000000000000000000000000",
+            "A_WIDTH": "00000000000000000000000000000001",
+            "B_SIGNED": "00000000000000000000000000000000",
+            "B_WIDTH": "00000000000000000000000000000001",
+            "Y_WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "src": "RCA_4BIT_STRUCTURAL.v:44.18-44.23"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 2 ],
+            "B": [ 3 ],
+            "Y": [ 5 ]
+          }
+        },
+        "$xor$RCA_4BIT_STRUCTURAL.v:42$1": {
+          "hide_name": 1,
+          "type": "$xor",
+          "parameters": {
+            "A_SIGNED": "00000000000000000000000000000000",
+            "A_WIDTH": "00000000000000000000000000000001",
+            "B_SIGNED": "00000000000000000000000000000000",
+            "B_WIDTH": "00000000000000000000000000000001",
+            "Y_WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "src": "RCA_4BIT_STRUCTURAL.v:42.18-42.23"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 2 ],
+            "B": [ 3 ],
+            "Y": [ 4 ]
+          }
+        }
+      },
+      "netnames": {
+        "a": {
+          "hide_name": 0,
+          "bits": [ 2 ],
+          "attributes": {
+            "src": "RCA_4BIT_STRUCTURAL.v:33.11-33.12"
+          }
+        },
+        "b": {
+          "hide_name": 0,
+          "bits": [ 3 ],
+          "attributes": {
+            "src": "RCA_4BIT_STRUCTURAL.v:34.11-34.12"
+          }
+        },
+        "cout": {
+          "hide_name": 0,
+          "bits": [ 5 ],
+          "attributes": {
+            "src": "RCA_4BIT_STRUCTURAL.v:36.11-36.15"
+          }
+        },
+        "n40_o": {
+          "hide_name": 0,
+          "bits": [ 4 ],
+          "attributes": {
+            "src": "RCA_4BIT_STRUCTURAL.v:37.8-37.13"
+          }
+        },
+        "n41_o": {
+          "hide_name": 0,
+          "bits": [ 5 ],
+          "attributes": {
+            "src": "RCA_4BIT_STRUCTURAL.v:38.8-38.13"
+          }
+        },
+        "s": {
+          "hide_name": 0,
+          "bits": [ 4 ],
+          "attributes": {
+            "src": "RCA_4BIT_STRUCTURAL.v:35.11-35.12"
+          }
+        }
+      }
+    }
+  }
+}

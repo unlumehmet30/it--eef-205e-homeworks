@@ -1,0 +1,290 @@
+{
+  "creator": "Yosys 0.56+186 (git sha1 51eaaffe0, aarch64-apple-darwin23.5-clang++ 18.1.8 -fPIC -O3)",
+  "modules": {
+    "FULL_ADDER": {
+      "attributes": {
+        "hdlname": "FULL_ADDER",
+        "top": "00000000000000000000000000000001",
+        "src": "full_adder.v:1.1-30.10"
+      },
+      "ports": {
+        "A": {
+          "direction": "input",
+          "bits": [ 2 ]
+        },
+        "B": {
+          "direction": "input",
+          "bits": [ 3 ]
+        },
+        "Cin": {
+          "direction": "input",
+          "bits": [ 4 ]
+        },
+        "S": {
+          "direction": "output",
+          "bits": [ 5 ]
+        },
+        "Cout": {
+          "direction": "output",
+          "bits": [ 6 ]
+        }
+      },
+      "cells": {
+        "$and$full_adder.v:21$3": {
+          "hide_name": 1,
+          "type": "$and",
+          "parameters": {
+            "A_SIGNED": "00000000000000000000000000000000",
+            "A_WIDTH": "00000000000000000000000000000001",
+            "B_SIGNED": "00000000000000000000000000000000",
+            "B_WIDTH": "00000000000000000000000000000001",
+            "Y_WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "src": "full_adder.v:21.17-21.22"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 2 ],
+            "B": [ 3 ],
+            "Y": [ 7 ]
+          }
+        },
+        "$and$full_adder.v:23$4": {
+          "hide_name": 1,
+          "type": "$and",
+          "parameters": {
+            "A_SIGNED": "00000000000000000000000000000000",
+            "A_WIDTH": "00000000000000000000000000000001",
+            "B_SIGNED": "00000000000000000000000000000000",
+            "B_WIDTH": "00000000000000000000000000000001",
+            "Y_WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "src": "full_adder.v:23.17-23.24"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 2 ],
+            "B": [ 4 ],
+            "Y": [ 8 ]
+          }
+        },
+        "$and$full_adder.v:27$6": {
+          "hide_name": 1,
+          "type": "$and",
+          "parameters": {
+            "A_SIGNED": "00000000000000000000000000000000",
+            "A_WIDTH": "00000000000000000000000000000001",
+            "B_SIGNED": "00000000000000000000000000000000",
+            "B_WIDTH": "00000000000000000000000000000001",
+            "Y_WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "src": "full_adder.v:27.17-27.24"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 3 ],
+            "B": [ 4 ],
+            "Y": [ 9 ]
+          }
+        },
+        "$or$full_adder.v:25$5": {
+          "hide_name": 1,
+          "type": "$or",
+          "parameters": {
+            "A_SIGNED": "00000000000000000000000000000000",
+            "A_WIDTH": "00000000000000000000000000000001",
+            "B_SIGNED": "00000000000000000000000000000000",
+            "B_WIDTH": "00000000000000000000000000000001",
+            "Y_WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "src": "full_adder.v:25.17-25.28"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 7 ],
+            "B": [ 8 ],
+            "Y": [ 10 ]
+          }
+        },
+        "$or$full_adder.v:29$7": {
+          "hide_name": 1,
+          "type": "$or",
+          "parameters": {
+            "A_SIGNED": "00000000000000000000000000000000",
+            "A_WIDTH": "00000000000000000000000000000001",
+            "B_SIGNED": "00000000000000000000000000000000",
+            "B_WIDTH": "00000000000000000000000000000001",
+            "Y_WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "src": "full_adder.v:29.17-29.28"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 10 ],
+            "B": [ 9 ],
+            "Y": [ 6 ]
+          }
+        },
+        "$xor$full_adder.v:17$1": {
+          "hide_name": 1,
+          "type": "$xor",
+          "parameters": {
+            "A_SIGNED": "00000000000000000000000000000000",
+            "A_WIDTH": "00000000000000000000000000000001",
+            "B_SIGNED": "00000000000000000000000000000000",
+            "B_WIDTH": "00000000000000000000000000000001",
+            "Y_WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "src": "full_adder.v:17.17-17.22"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 2 ],
+            "B": [ 3 ],
+            "Y": [ 11 ]
+          }
+        },
+        "$xor$full_adder.v:19$2": {
+          "hide_name": 1,
+          "type": "$xor",
+          "parameters": {
+            "A_SIGNED": "00000000000000000000000000000000",
+            "A_WIDTH": "00000000000000000000000000000001",
+            "B_SIGNED": "00000000000000000000000000000000",
+            "B_WIDTH": "00000000000000000000000000000001",
+            "Y_WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "src": "full_adder.v:19.17-19.27"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 11 ],
+            "B": [ 4 ],
+            "Y": [ 5 ]
+          }
+        }
+      },
+      "netnames": {
+        "A": {
+          "hide_name": 0,
+          "bits": [ 2 ],
+          "attributes": {
+            "src": "full_adder.v:2.11-2.12"
+          }
+        },
+        "B": {
+          "hide_name": 0,
+          "bits": [ 3 ],
+          "attributes": {
+            "src": "full_adder.v:3.11-3.12"
+          }
+        },
+        "Cin": {
+          "hide_name": 0,
+          "bits": [ 4 ],
+          "attributes": {
+            "src": "full_adder.v:4.11-4.14"
+          }
+        },
+        "Cout": {
+          "hide_name": 0,
+          "bits": [ 6 ],
+          "attributes": {
+            "src": "full_adder.v:6.11-6.15"
+          }
+        },
+        "S": {
+          "hide_name": 0,
+          "bits": [ 5 ],
+          "attributes": {
+            "src": "full_adder.v:5.11-5.12"
+          }
+        },
+        "n2_o": {
+          "hide_name": 0,
+          "bits": [ 11 ],
+          "attributes": {
+            "src": "full_adder.v:7.8-7.12"
+          }
+        },
+        "n3_o": {
+          "hide_name": 0,
+          "bits": [ 5 ],
+          "attributes": {
+            "src": "full_adder.v:8.8-8.12"
+          }
+        },
+        "n4_o": {
+          "hide_name": 0,
+          "bits": [ 7 ],
+          "attributes": {
+            "src": "full_adder.v:9.8-9.12"
+          }
+        },
+        "n5_o": {
+          "hide_name": 0,
+          "bits": [ 8 ],
+          "attributes": {
+            "src": "full_adder.v:10.8-10.12"
+          }
+        },
+        "n6_o": {
+          "hide_name": 0,
+          "bits": [ 10 ],
+          "attributes": {
+            "src": "full_adder.v:11.8-11.12"
+          }
+        },
+        "n7_o": {
+          "hide_name": 0,
+          "bits": [ 9 ],
+          "attributes": {
+            "src": "full_adder.v:12.8-12.12"
+          }
+        },
+        "n8_o": {
+          "hide_name": 0,
+          "bits": [ 6 ],
+          "attributes": {
+            "src": "full_adder.v:13.8-13.12"
+          }
+        }
+      }
+    }
+  }
+}

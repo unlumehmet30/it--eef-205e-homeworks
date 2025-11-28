@@ -1,0 +1,19 @@
+v 4
+file "/Users/cd/OneWareStudio/Projects/hw3/" "full_adder.vhd" "85c59795480d8a005f6574f47c52fba574611280" "20251124165900.855":
+  entity full_adder at 1( 0) + 0 on 15;
+  architecture dataflow of full_adder at 12( 258) + 0 on 16;
+file "/Users/cd/OneWareStudio/Projects/hw3/" "half_adder.vhd" "be6209a700b983429354bc037d1fd3e7bfc368c2" "20251124165900.855":
+  entity half_adder at 1( 0) + 0 on 13;
+  architecture dataflow of half_adder at 11( 197) + 0 on 14;
+file "/Users/cd/OneWareStudio/Projects/hw3/" "full_adder_tb.vhd" "3867331116a9f6d90140da028eef85b46ea07daa" "20251124165900.755":
+  entity full_adder_tb at 1( 0) + 0 on 4;
+  architecture behavioral of full_adder_tb at 8( 112) + 0 on 4;
+file "/Users/cd/OneWareStudio/Projects/hw3/" "RCA_4BIT_TB.vhd" "d3f3a45fa8b492e61521e5111282bc21f82b5237" "20251124165900.755":
+  entity rca_4bit_tb at 1( 0) + 0 on 4;
+  architecture behavioral of rca_4bit_tb at 7( 84) + 0 on 4;
+file "/Users/cd/OneWareStudio/Projects/hw3/" "half_adder_tb.vhd" "cab4148296d45f8efa1e6638bc2d03e6c73c8ee0" "20251124165900.755":
+  entity half_adder_tb at 1( 0) + 0 on 4;
+  architecture behavioral of half_adder_tb at 8( 149) + 0 on 4;
+file "/Users/cd/OneWareStudio/Projects/hw3/" "RCA_4BIT_STRUCTURAL.vhd" "a36ffec1c2c058170e168e196b3d6b90cc09d48c" "20251124165900.854":
+  entity rca_4bit_structural at 1( 0) + 0 on 11;
+  architecture structural of rca_4bit_structural at 10( 318) + 0 on 12;

@@ -1,0 +1,53 @@
+$date
+  Sun Nov 23 22:40:48 2025
+$end
+$version
+  GHDL v0
+$end
+$timescale
+  1 fs
+$end
+$scope module standard $end
+$upscope $end
+$scope module std_logic_1164 $end
+$upscope $end
+$scope module half_adder_tb $end
+$var reg 1 ! a_tb $end
+$var reg 1 " b_tb $end
+$var reg 1 # s_tb $end
+$var reg 1 $ cout_tb $end
+$scope module uut $end
+$var reg 1 % a $end
+$var reg 1 & b $end
+$var reg 1 ' s $end
+$var reg 1 ( cout $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+0!
+0"
+0#
+0$
+0%
+0&
+0'
+0(
+#10000000
+1"
+1#
+1&
+1'
+#20000000
+1!
+0"
+1%
+0&
+#30000000
+1"
+0#
+1$
+1&
+0'
+1(
+#40000000

@@ -1,0 +1,22 @@
+{
+  "Include": [
+    "*.vhd",
+    "*.vhdl",
+    "*.v",
+    "*.vcd",
+    "vhdl_ls.toml",
+    "*.ghw"
+  ],
+  "Exclude": [
+    "build"
+  ],
+  "Loader": "OpenFpgaLoader",
+  "Toolchain": "Yosys",
+  "TestBenches": [
+    "dataflow_tb.vhd",
+    "half_adder_tb.vhd",
+    "full_adder_tb.vhd",
+    "RCA_4BIT_TB.vhd"
+  ],
+  "VHDL_Standard": "93c"
+}
