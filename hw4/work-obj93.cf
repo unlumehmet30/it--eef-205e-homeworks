@@ -1,0 +1,31 @@
+v 4
+file . "D_FF_tb.vhd" "00b4e4eccb45a74d731fe19cfff5d10cb5f8eaa6" "20251223104556.058":
+  entity d_ff_tb at 1( 0) + 0 on 37;
+  architecture behavioral of d_ff_tb at 7( 76) + 0 on 38;
+file . "D_latch_tb.vhd" "be44b76daff7f39c164750abbaae7399048ff614" "20251223104555.606":
+  entity d_latch_tb at 1( 0) + 0 on 33;
+  architecture behavioral of d_latch_tb at 7( 82) + 0 on 34;
+file . "SR_latch_tb.vhd" "468ec320353909ce13a0d489deb33b2addc19006" "20251223104555.253":
+  entity sr_latch_tb at 1( 0) + 0 on 29;
+  architecture behavioral of sr_latch_tb at 7( 84) + 0 on 30;
+file . "SR_latch_without_C_tb.vhd" "02af2878087a0202620bafffae5edf54b4a39c86" "20251223104553.257":
+  entity sr_latch_without_c_tb at 1( 0) + 0 on 25;
+  architecture behavioral of sr_latch_without_c_tb at 7( 104) + 0 on 26;
+file . "NAND_3.vhd" "614a740196c8232f83b42132350da0d012962a45" "20251223104553.222":
+  entity nand_3 at 1( 0) + 0 on 21;
+  architecture behavioral of nand_3 at 11( 192) + 0 on 22;
+file . "NAND_gate.vhd" "ecabd10bcc51955fa99e9c425d9d0603545d756b" "20251223104553.171":
+  entity nand_gate at 1( 0) + 0 on 19;
+  architecture behavioral of nand_gate at 10( 169) + 0 on 20;
+file . "SR_latch_without_C.vhd" "7d50838456c499a4ba22bc685147c7cd686c3b72" "20251223104553.239":
+  entity sr_latch_without_c at 1( 0) + 0 on 23;
+  architecture structural of sr_latch_without_c at 11( 230) + 0 on 24;
+file . "SR_latch.vhd" "76d9db5e48959999f4befdbe34c6ca2c4d1d60ad" "20251223104555.212":
+  entity sr_latch at 1( 0) + 0 on 27;
+  architecture structural of sr_latch at 12( 245) + 0 on 28;
+file . "D_latch.vhd" "c61d35234fa49b3ff44065899d5fa7035dbbf34e" "20251223104555.568":
+  entity d_latch at 1( 0) + 0 on 31;
+  architecture structural of d_latch at 11( 196) + 0 on 32;
+file . "D_FF.vhd" "80b23c19a5d1888e0e4047fd187be979baf5c5a8" "20251223104556.012":
+  entity d_ff at 1( 0) + 0 on 35;
+  architecture structural of d_ff at 11( 223) + 0 on 36;

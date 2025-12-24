@@ -1,0 +1,98 @@
+$date
+  Tue Dec 23 13:45:55 2025
+$end
+$version
+  GHDL v0
+$end
+$timescale
+  1 fs
+$end
+$scope module standard $end
+$upscope $end
+$scope module std_logic_1164 $end
+$upscope $end
+$scope module sr_latch_without_c_tb $end
+$var reg 1 ! s_bar $end
+$var reg 1 " r_bar $end
+$var reg 1 # q $end
+$var reg 1 $ q_bar $end
+$scope module uut $end
+$var reg 1 % s_bar $end
+$var reg 1 & r_bar $end
+$var reg 1 ' q $end
+$var reg 1 ( q_bar $end
+$scope module u1 $end
+$var reg 1 ) a $end
+$var reg 1 * b $end
+$var reg 1 + c $end
+$upscope $end
+$scope module u2 $end
+$var reg 1 , a $end
+$var reg 1 - b $end
+$var reg 1 . c $end
+$upscope $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+1!
+1"
+U#
+U$
+1%
+1&
+U'
+U(
+1)
+U*
+U+
+1,
+U-
+U.
+#1000000
+U+
+U.
+#20000000
+0!
+0%
+0)
+#21000000
+1#
+1'
+1+
+1-
+#22000000
+0$
+0(
+0*
+0.
+#23000000
+1+
+#40000000
+1!
+1%
+1)
+#41000000
+1+
+#60000000
+0"
+0&
+0,
+#61000000
+1$
+1(
+1*
+1.
+#62000000
+0#
+0'
+0+
+0-
+#63000000
+1.
+#80000000
+1"
+1&
+1,
+#81000000
+1.

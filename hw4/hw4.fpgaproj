@@ -1,0 +1,25 @@
+{
+  "Include": [
+    "*.vhd",
+    "*.vhdl",
+    "*.v",
+    "*.vcd",
+    "vhdl_ls.toml",
+    "*.ghw"
+  ],
+  "Exclude": [
+    "build"
+  ],
+  "Loader": "OpenFpgaLoader",
+  "Toolchain": "Yosys",
+  "TestBenches": [
+    "D_FF_tb.vhd",
+    "D_latch_tb.vhd",
+    "JK_FF_tb.vhd",
+    "JK_latch_tb.vhd",
+    "NAND_gate_tb.vhd",
+    "SR_latch_tb.vhd",
+    "SR_latch_without_C_tb.vhd"
+  ],
+  "VHDL_Standard": "93c"
+}

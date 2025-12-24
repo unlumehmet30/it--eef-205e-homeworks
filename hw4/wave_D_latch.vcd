@@ -1,0 +1,199 @@
+$date
+  Tue Dec 23 13:45:55 2025
+$end
+$version
+  GHDL v0
+$end
+$timescale
+  1 fs
+$end
+$scope module standard $end
+$upscope $end
+$scope module std_logic_1164 $end
+$upscope $end
+$scope module d_latch_tb $end
+$var reg 1 ! d $end
+$var reg 1 " c $end
+$var reg 1 # q $end
+$var reg 1 $ q_bar $end
+$scope module uut $end
+$var reg 1 % d $end
+$var reg 1 & c $end
+$var reg 1 ' q $end
+$var reg 1 ( q_bar $end
+$var reg 1 ) not_d $end
+$scope module inv1 $end
+$var reg 1 * a $end
+$var reg 1 + b $end
+$var reg 1 , c $end
+$upscope $end
+$scope module u_sr $end
+$var reg 1 - s $end
+$var reg 1 . r $end
+$var reg 1 / c $end
+$var reg 1 0 q $end
+$var reg 1 1 q_bar $end
+$var reg 1 2 s_nand_out $end
+$var reg 1 3 r_nand_out $end
+$scope module nand1 $end
+$var reg 1 4 a $end
+$var reg 1 5 b $end
+$var reg 1 6 c $end
+$upscope $end
+$scope module nand2 $end
+$var reg 1 7 a $end
+$var reg 1 8 b $end
+$var reg 1 9 c $end
+$upscope $end
+$scope module core_latch $end
+$var reg 1 : s_bar $end
+$var reg 1 ; r_bar $end
+$var reg 1 < q $end
+$var reg 1 = q_bar $end
+$scope module u1 $end
+$var reg 1 > a $end
+$var reg 1 ? b $end
+$var reg 1 @ c $end
+$upscope $end
+$scope module u2 $end
+$var reg 1 A a $end
+$var reg 1 B b $end
+$var reg 1 C c $end
+$upscope $end
+$upscope $end
+$upscope $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+1!
+1"
+U#
+U$
+1%
+1&
+U'
+U(
+U)
+1*
+1+
+U,
+1-
+U.
+1/
+U0
+U1
+U2
+U3
+14
+15
+U6
+U7
+18
+U9
+U:
+U;
+U<
+U=
+U>
+U?
+U@
+UA
+UB
+UC
+#1000000
+0)
+0,
+0.
+02
+06
+07
+U9
+0:
+0>
+U@
+UC
+#2000000
+1#
+1'
+10
+13
+19
+1;
+1<
+1@
+1A
+1B
+#3000000
+0$
+0(
+01
+0=
+0?
+0C
+#4000000
+1@
+#20000000
+0!
+0%
+0*
+0+
+0-
+04
+#21000000
+1)
+1,
+1.
+12
+16
+17
+1:
+1>
+#22000000
+03
+09
+0;
+1@
+0A
+#23000000
+1$
+1(
+11
+1=
+1?
+1C
+#24000000
+0#
+0'
+00
+0<
+0@
+0B
+#25000000
+1C
+#40000000
+1!
+0"
+1%
+0&
+1*
+1+
+1-
+0/
+14
+05
+08
+#41000000
+0)
+0,
+0.
+13
+16
+07
+19
+1;
+1A
+#42000000
+19
+1C
+#60000000
